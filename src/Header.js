@@ -22,6 +22,7 @@ export default function Header() {
             </button>
           </div>
         </form>
+        <Sub-header /> 
       </div>
     </div>
   );
