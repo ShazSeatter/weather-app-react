@@ -1,0 +1,40 @@
+.Header .top-nav {
+  padding-top: 2.1875rem;
+  padding-bottom: 1.625rem;
+  margin-bottom: 3.1875rem;
+  display: block;
+  background-color: #efecea;
+  opacity: 0.7;
+}
+
+.Header form {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 18.75rem;
+}
+
+.Header .search-input,
+.Header .submit-btn,
+.Header .location-btn {
+  text-align: center;
+  border: none;
+  background-color: #ffffff;
+  padding: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.Header form button {
+  color: black;
+  background: white;
+  transition: all 200ms ease-in-out;
+}
+
+.Header form button:hover {
+  background: rgb(197, 192, 192);
+  color: white;
+}
+
+.Header .location-btn {
+  padding-right: 0.59375rem;
+}
