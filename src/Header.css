@@ -37,3 +37,13 @@
 .Header .location-btn {
   padding-right: 0.59375rem;
 }
+
+.Sub-header .main-cities {
+    color: #626670; 
+    padding: 1.875rem; 
+}
+
+.Sub-header .main-cities:hover {
+    color: #bec6c3; 
+    font-weight: bold; 
+} 

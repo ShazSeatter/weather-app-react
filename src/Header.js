@@ -22,7 +22,20 @@ export default function Header() {
             </button>
           </div>
         </form>
-        <Sub-header /> 
+      </div>
+      <div className="Sub-header">
+        <span className="main-cities-list">
+          <a href="#" className="main-cities">Tokoyo</a>
+        </span>
+        <span className="main-cities-list">
+          <a href="#" className="main-cities">New York</a>
+        </span>
+        <span className="main-cities-list">
+          <a href="#" className="main-cities">London</a>
+        </span>
+        <span className="main-cities-list">
+          <a href="#" className="main-cities">Sydney</a>
+        </span>
       </div>
     </div>
   );
