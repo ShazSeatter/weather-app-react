@@ -25,16 +25,24 @@ export default function Header() {
       </div>
       <div className="Sub-header">
         <span className="main-cities-list">
-          <a href="#" className="main-cities">Tokoyo</a>
+          <a href="#" className="main-cities">
+            Tokoyo
+          </a>
         </span>
         <span className="main-cities-list">
-          <a href="#" className="main-cities">New York</a>
+          <a href="#" className="main-cities">
+            New York
+          </a>
         </span>
         <span className="main-cities-list">
-          <a href="#" className="main-cities">London</a>
+          <a href="#" className="main-cities">
+            London
+          </a>
         </span>
         <span className="main-cities-list">
-          <a href="#" className="main-cities">Sydney</a>
+          <a href="#" className="main-cities">
+            Sydney
+          </a>
         </span>
       </div>
     </div>
