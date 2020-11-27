@@ -1,3 +1,7 @@
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
 ul li {
     display: inline; 
     padding: 10px 40px;
@@ -10,7 +14,7 @@ ul li {
     padding: 1.25rem;
     margin: 3.125rem auto;
     max-width: 43.75rem;
-    background-color: #e0d7d3; 
+    background-color: #E5ECEE; 
 }
 
 .row {
