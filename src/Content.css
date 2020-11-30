@@ -4,7 +4,7 @@ h1 {
 
 ul li {
     display: inline; 
-    padding: 10px 40px;
+    padding: 0.625rem 2.5rem;
 }
 
 .Content {
@@ -23,25 +23,26 @@ margin-top: 0.5rem;
 }
 
 .main-temperature {
-    font-size: 3.125rem; 
+    font-size: 4rem;
+    position: relative;
+    bottom: 1.25rem; 
+    padding-left: 1.25rem; 
+}
+
+.WeatherTemperature {
+    display: float; 
+    padding: 1.875rem; 
 }
 
 .units {
     position: relative;
-    bottom: 1.5625rem;
+    bottom: 3rem;
     left: 0.3125rem; 
-}
-
-.container {
-    display: flex; 
-    justify-content: center;
-    padding: 5px 20px 20px;
-    margin-bottom: 25px;
 }
 
 .ul-list {
     list-style: none; 
     margin-bottom: 50px;
     text-align: center; 
-    padding: 10px
+    padding: 0.625rem; 
 }
