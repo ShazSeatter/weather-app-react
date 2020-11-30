@@ -6,18 +6,20 @@ import Content from "./Content";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <Cities />
-      <Content />
-      <div className="Footer">
-        <a
-          href="https://github.com/ShazSeatter/weather-app-react"
-          target="_blank"
-          className="git-hub-respo"
-        >
-          Open source code
-        </a>{" "}
-        by Shaz Seatter
+      <div className="container">
+        <Header />
+        <Cities />
+        <Content />
+        <div className="Footer">
+          <a
+            href="https://github.com/ShazSeatter/weather-app-react"
+            target="_blank"
+            className="git-hub-respo"
+          >
+            Open source code
+          </a>{" "}
+          by Shaz Seatter
+        </div>
       </div>
     </div>
   );
