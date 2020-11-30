@@ -8,7 +8,7 @@ ul li {
 }
 
 .Content {
-    border: 0.3125rem solid rgba(255, 255, 255, 0.2);
+    border: 0.3125rem solid #E5ECEE;
     border-radius: 0.625rem;
     box-shadow: 0.625rem 0.625rem 0.5rem -0.125rem rgba(142, 141, 142, 0.3);
     padding: 1.25rem;
