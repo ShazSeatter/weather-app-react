@@ -8,8 +8,6 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <Cities />
-        <Content />
         <div className="Footer">
           <a
             href="https://github.com/ShazSeatter/weather-app-react"

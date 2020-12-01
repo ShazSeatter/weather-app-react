@@ -1,4 +1,6 @@
 import React from "react";
+import Cities from "./Cities";
+import Content from "./Content";
 
 import "./Header.css";
 
@@ -24,6 +26,8 @@ export default function Header() {
           </div>
         </form>
       </div>
+      <Cities />
+      <Content />
     </div>
   );
 }

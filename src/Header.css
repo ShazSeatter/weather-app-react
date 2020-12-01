@@ -1,13 +1,12 @@
-.Header {
-    background-color: #C6DDE2;
-    opacity: 0.7;
-}
+
 
 .Header .top-nav {
   padding-top: 2.1875rem;
   padding-bottom: 1.625rem;
   margin-bottom: 3.1875rem;
   display: block;
+   background-color: #C6DDE2;
+    opacity: 0.7;
 }
 
 .Header form {
