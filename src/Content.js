@@ -1,6 +1,7 @@
 import React from "react";
 import FormattedDate from "./FormattedDate"; 
 import WeatherIcon from "./WeatherIcon"; 
+import TemperatureChange from "./TemperatureChange"; 
 import ReactAnimatedWeather from "react-animated-weather";
 import "./Content.css";
 
@@ -14,16 +15,8 @@ export default function Content(props) {
         </h2>
         <h2 className="text-capitalize">{props.data.description}</h2>
         <div className="WeatherTemperature">
-          <WeatherIcon code={props.data.icon} /> 
-          <span className="main-temperature">
-            {Math.round(props.data.temperature)}
-          </span>
-          <span className="units">
-            <a href="/">°C</a> |
-          </span>
-          <span className="units">
-            <a href="/"> °F</a>
-          </span>
+          <WeatherIcon code={props.data.icon} />
+          <TemperatureChange celsius={props.data.temperature} />
         </div>
         <div className="weather-data">
           <ul className="ul-list">
@@ -36,7 +29,10 @@ export default function Content(props) {
             </li>
             <li>
               <i class="fas fa-temperature-high"></i> Feels like:{" "}
-              {Math.round(props.data.feelsLike)}°C
+              {Math.round(props.data.feelsLike)}
+              <span className="feelsLike">°C</span> |{" "}
+              {Math.round((props.data.feelsLike * 9) / 5 + 32)}
+              <span className="feelsLike">°F</span>
             </li>
           </ul>
         </div>

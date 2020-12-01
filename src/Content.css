@@ -55,4 +55,11 @@
     margin-bottom: 3.125rem;
     text-align: center; 
     padding: 0.625rem; 
+    font-size: 1.0625rem; 
+}
+
+.weather-data .feelsLike {
+    font-size: 0.8125rem; 
+    position: relative; 
+    bottom: 0.125rem; 
 }
