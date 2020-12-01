@@ -1,12 +1,3 @@
-.Content h1 {
-    font-family: 'Julius Sans One', sans-serif;
-}
-
-.Content ul li {
-    display: inline; 
-    padding: 0.625rem 2.5rem;
-}
-
 .Content {
     border: 0.3125rem solid #E5ECEE;
     border-radius: 0.625rem;
@@ -16,6 +7,25 @@
     max-width: 43.75rem;
     background-color: #E5ECEE; 
 }
+
+.Content h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 3.125rem; 
+}
+
+.Content .formatted-date {
+    font-size: 1.25rem; 
+}
+
+.Content .text-capitalize {
+    font-size: 2.5rem; 
+}
+
+.Content ul li {
+    display: inline; 
+    padding: 0.625rem 2.5rem;
+}
+
 
 .row {
     padding: 0.9375rem;
@@ -42,7 +52,7 @@
 
 .weather-data .ul-list {
     list-style: none; 
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
     text-align: center; 
     padding: 0.625rem; 
 }

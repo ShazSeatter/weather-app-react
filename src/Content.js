@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import FormattedDate from "./FormattedDate"; 
 import "./Content.css";
 import ReactAnimatedWeather from "react-animated-weather";
 
@@ -7,7 +8,6 @@ export default function Content(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
 
   function handleResponse(response) {
-      console.log(response.data);
     setWeatherData({
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -15,7 +15,7 @@ export default function Content(props) {
       feelsLike: response.data.main.feels_like, 
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      date: "Tue 1 Dec, 2020",
+      date: new Date(response.data.dt * 1000),
       ready: true,
     });
   }
@@ -24,7 +24,7 @@ export default function Content(props) {
     return (
       <div className="Content">
         <h1>{weatherData.city}</h1>
-        <p>{weatherData.date}</p>
+        <h2 className="formatted-date"><FormattedDate date={weatherData.date} /></h2>
         <h2 className="text-capitalize">{weatherData.description}</h2>
         <div className="WeatherTemperature">
           <ReactAnimatedWeather
