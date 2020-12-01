@@ -23,7 +23,7 @@ export default function Content() {
           size={80}
           animate={true}
         />
-        <span className="main-temperature">5</span>
+        <span className="main-temperature"><strong>5</strong></span>
         <span className="units">
           <a href="/">°C</a> |
         </span>
