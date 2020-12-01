@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Cities from "./Cities";
 import Content from "./Content";
 
 import "./Header.css";
@@ -60,7 +59,6 @@ export default function Header(props) {
             </div>
           </form>
         </div>
-        <Cities />
         <Content data={weatherData} />
       </div>
     );
