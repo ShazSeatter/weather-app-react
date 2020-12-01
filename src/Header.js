@@ -27,7 +27,7 @@ export default function Header() {
         </form>
       </div>
       <Cities />
-      <Content />
+      <Content defaultCity="Madrid"/>
     </div>
   );
 }
