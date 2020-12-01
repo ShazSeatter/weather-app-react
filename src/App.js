@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <div className="container">
-        <Header />
+        <Header defaultCity="Aberdeen" />
         <div className="Footer">
           <a
             href="https://github.com/ShazSeatter/weather-app-react"

@@ -1,31 +1,16 @@
-import React, { useState } from "react";
-import axios from "axios";
+import React from "react";
 import FormattedDate from "./FormattedDate"; 
 import "./Content.css";
 import ReactAnimatedWeather from "react-animated-weather";
 
 export default function Content(props) {
-  const [weatherData, setWeatherData] = useState({ ready: false });
-
-  function handleResponse(response) {
-    setWeatherData({
-      city: response.data.name,
-      temperature: response.data.main.temp,
-      humidity: response.data.main.humidity,
-      feelsLike: response.data.main.feels_like, 
-      description: response.data.weather[0].description,
-      wind: response.data.wind.speed,
-      date: new Date(response.data.dt * 1000),
-      ready: true,
-    });
-  }
-
-  if (weatherData.ready) {
     return (
       <div className="Content">
-        <h1>{weatherData.city}</h1>
-        <h2 className="formatted-date"><FormattedDate date={weatherData.date} /></h2>
-        <h2 className="text-capitalize">{weatherData.description}</h2>
+        <h1>{props.data.city}</h1>
+        <h2 className="formatted-date">
+          <FormattedDate date={props.data.date} />
+        </h2>
+        <h2 className="text-capitalize">{props.data.description}</h2>
         <div className="WeatherTemperature">
           <ReactAnimatedWeather
             icon="CLEAR_DAY"
@@ -34,7 +19,7 @@ export default function Content(props) {
             animate={true}
           />
           <span className="main-temperature">
-            {Math.round(weatherData.temperature)}
+            {Math.round(props.data.temperature)}
           </span>
           <span className="units">
             <a href="/">°C</a> |
@@ -46,14 +31,15 @@ export default function Content(props) {
         <div className="weather-data">
           <ul className="ul-list">
             <li>
-              <i class="fas fa-tint"></i> Humidity: {weatherData.humidity}%
+              <i class="fas fa-tint"></i> Humidity: {props.data.humidity}%
             </li>
             <li>
               {" "}
-              <i class="fas fa-wind"></i> Wind: {weatherData.wind} km/h
+              <i class="fas fa-wind"></i> Wind: {props.data.wind} km/h
             </li>
             <li>
-              <i class="fas fa-temperature-high"></i> Feels like: {Math.round(weatherData.feelsLike)}°C
+              <i class="fas fa-temperature-high"></i> Feels like:{" "}
+              {Math.round(props.data.feelsLike)}°C
             </li>
           </ul>
         </div>
@@ -116,10 +102,4 @@ export default function Content(props) {
         </div>
       </div>
     );
-  } else {
-    const apiKey = "f902315c1bb8b7c1ac10cb7eaa68c265";
-    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.defaultCity}&appid=${apiKey}&units=metric`;
-    axios.get(apiUrl).then(handleResponse);
-    return "Loading...";
-  }
 }
