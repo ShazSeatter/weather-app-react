@@ -24,6 +24,10 @@
   padding: 0.5rem;
 }
 
+.Header .search-input {
+  outline-color: lightblue; 
+}
+
 .Header form button {
   color: black;
   background: white;
@@ -38,3 +42,5 @@
 .Header .location-btn {
   padding-right: 0.59375rem;
 }
+
+

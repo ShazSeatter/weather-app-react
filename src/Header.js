@@ -9,11 +9,11 @@ export default function Header() {
         <form className="search-form">
           <div className="wrapper">
             <input
-              type="text"
+              type="search"
               className="search-input"
               placeholder="Enter a city..."
               autoComplete="off"
-              id="search-text-input"
+              autoFocus="on"
             />
             <button className="submit-btn" type="submit">
               <i className="fas fa-search"></i>
