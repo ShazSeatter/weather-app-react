@@ -1,7 +1,9 @@
 import React from "react";
 import FormattedDate from "./FormattedDate"; 
-import "./Content.css";
+import WeatherIcon from "./WeatherIcon"; 
 import ReactAnimatedWeather from "react-animated-weather";
+import "./Content.css";
+
 
 export default function Content(props) {
     return (
@@ -12,12 +14,7 @@ export default function Content(props) {
         </h2>
         <h2 className="text-capitalize">{props.data.description}</h2>
         <div className="WeatherTemperature">
-          <ReactAnimatedWeather
-            icon="CLEAR_DAY"
-            color="black"
-            size={80}
-            animate={true}
-          />
+          <WeatherIcon code={props.data.icon} /> 
           <span className="main-temperature">
             {Math.round(props.data.temperature)}
           </span>

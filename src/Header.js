@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Cities from "./Cities";
 import Content from "./Content";
 
 import "./Header.css";
@@ -11,6 +12,7 @@ export default function Header(props) {
   function handleResponse(response) {
     setWeatherData({
       city: response.data.name,
+      icon: response.data.weather[0].icon, 
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       feelsLike: response.data.main.feels_like,
@@ -59,6 +61,7 @@ export default function Header(props) {
             </div>
           </form>
         </div>
+        <Cities /> 
         <Content data={weatherData} />
       </div>
     );
