@@ -8,6 +8,7 @@ export default function WeatherForecast(props) {
   const [forecast, setForecast] = useState(null);
 
   function handleForecastResponse(response) {
+    console.log(response.data); 
     setForecast(response.data);
     setLoaded(true);
   }
@@ -17,12 +18,30 @@ export default function WeatherForecast(props) {
       <div className="WeatherForecast">
         <h3>Hourly Forecast</h3>
         <div className="WeatherForecastData row">
-        <WeatherForecastList data={forecast.list[0]} />
-        <WeatherForecastList data={forecast.list[1]} />
-        <WeatherForecastList data={forecast.list[2]} />
-        <WeatherForecastList data={forecast.list[3]} />
-        <WeatherForecastList data={forecast.list[4]} />
-        <WeatherForecastList data={forecast.list[5]} />
+          <WeatherForecastList
+            data={forecast.list[0]}
+            time={forecast.city.timezone}
+          />
+          <WeatherForecastList
+            data={forecast.list[1]}
+            time={forecast.city.timezone}
+          />
+          <WeatherForecastList
+            data={forecast.list[2]}
+            time={forecast.city.timezone}
+          />
+          <WeatherForecastList
+            data={forecast.list[3]}
+            time={forecast.city.timezone}
+          />
+          <WeatherForecastList
+            data={forecast.list[4]}
+            time={forecast.city.timezone}
+          />
+          <WeatherForecastList
+            data={forecast.list[5]}
+            time={forecast.city.timezone}
+          />
         </div>
       </div>
     );

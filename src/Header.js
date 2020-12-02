@@ -18,7 +18,7 @@ export default function Header(props) {
       feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      date: new Date(response.data.dt * 1000),
+      date: new Date(response.data.dt * 1000 + (response.data.timezone * 1000)),
       ready: true,
     });
   }

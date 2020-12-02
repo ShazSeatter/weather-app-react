@@ -20,14 +20,14 @@ export default function Content(props) {
         <div className="weather-data">
           <ul className="ul-list">
             <li>
-              <i class="fas fa-tint"></i> Humidity: {props.data.humidity}%
+              <i className="fas fa-tint"></i> Humidity: {props.data.humidity}%
             </li>
             <li>
               {" "}
-              <i class="fas fa-wind"></i> Wind: {props.data.wind} km/h
+              <i className="fas fa-wind"></i> Wind: {props.data.wind} km/h
             </li>
             <li>
-              <i class="fas fa-temperature-high"></i> Feels like:{" "}
+              <i className="fas fa-temperature-high"></i> Feels like:{" "}
               {Math.round(props.data.feelsLike)}
               <span className="feelsLike">°C</span> |{" "}
               {Math.round((props.data.feelsLike * 9) / 5 + 32)}
