@@ -8,8 +8,12 @@ import "./Header.css";
 export default function Header(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
+  const [bgClass, setBgClass] = useState("clear"); 
 
   function handleResponse(response) {
+    const weather = response.data.weather[0].main.toLowerCase(); 
+    setBgClass(weather); 
+  
     setWeatherData({
       city: response.data.name,
       icon: response.data.weather[0].icon,
@@ -63,8 +67,10 @@ export default function Header(props) {
           </form>
         </div>
         <div className="content-wrapper">
+        <div className={bgClass}>
         <Content data={weatherData} />
         <WeatherForecast city={weatherData.city}/> 
+        </div>
         </div>
       </div>
     );
