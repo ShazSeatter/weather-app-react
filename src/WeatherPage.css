@@ -3,8 +3,7 @@
   padding-bottom: 1.625rem;
   margin-bottom: 3.1875rem;
   display: block;
-   background-color: #C6DDE2;
-    opacity: 0.7;
+  background-color: #343D82;
 }
 
 .WeatherPage form {
@@ -32,7 +31,8 @@
 }
 
 .WeatherPage form button:hover {
-  background: #c1d8dd; 
+  background: #343D82; 
+  opacity: 0.8; 
   color: white;
 }
 
@@ -41,11 +41,10 @@
 }
 
 .content-wrapper {
-   border: 0.3125rem solid #E5ECEE;
     border-radius: 0.625rem;
     box-shadow: 0.625rem 0.625rem 0.5rem -0.125rem rgba(142, 141, 142, 0.3);
     padding: 1.25rem;
     margin: 3.125rem auto;
     max-width: 43.75rem;
-    background-color: #E5ECEE; 
+    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
 }
