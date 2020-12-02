@@ -4,9 +4,9 @@ import Content from "./Content";
 import Loader from "react-loader-spinner";
 import WeatherForecast from "./WeatherForecast";
 
-import "./Header.css";
+import "./WeatherPage.css";
 
-export default function Header(props) {
+export default function WeatherPage(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
   const [bgClass, setBgClass] = useState("clear"); 
@@ -46,7 +46,7 @@ export default function Header(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="Header">
+      <div className="WeatherPage">
         <div className="top-nav">
           <form className="search-form" onSubmit={handleSubmit}>
             <div className="wrapper">

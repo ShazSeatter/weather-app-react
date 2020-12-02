@@ -1,4 +1,4 @@
-.Header .top-nav {
+.WeatherPage .top-nav {
   padding-top: 2.1875rem;
   padding-bottom: 1.625rem;
   margin-bottom: 3.1875rem;
@@ -7,36 +7,36 @@
     opacity: 0.7;
 }
 
-.Header form {
+.WeatherPage form {
   margin: 0 auto;
   max-width: 18.75rem;
 }
 
-.Header .search-input,
-.Header .submit-btn,
-.Header .location-btn {
+.WeatherPage .search-input,
+.WeatherPage .submit-btn,
+.WeatherPage .location-btn {
   text-align: center;
   border: none;
   background-color: #ffffff;
   padding: 0.5rem;
 }
 
-.Header .search-input {
+.WeatherPage.search-input {
   outline-color: lightblue; 
 }
 
-.Header form button {
+.WeatherPage form button {
   color: black;
   background: white;
   transition: all 200ms ease-in-out;
 }
 
-.Header form button:hover {
+.WeatherPage form button:hover {
   background: #c1d8dd; 
   color: white;
 }
 
-.Header .location-btn {
+.WeatherPage .location-btn {
   padding-right: 0.59375rem;
 }
 

@@ -1,11 +1,11 @@
 import "./App.css";
-import Header from "./Header"; 
+import WeatherPage from "./WeatherPage"; 
 
 function App() {
   return (
     <div className="App">
       <div className="container">
-        <Header defaultCity="Aberdeen" />
+        <WeatherPage defaultCity="Aberdeen" />
         <div className="Footer">
           <a
             href="https://github.com/ShazSeatter/weather-app-react"
