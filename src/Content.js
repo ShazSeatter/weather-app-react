@@ -2,7 +2,6 @@ import React from "react";
 import FormattedDate from "./FormattedDate"; 
 import WeatherIcon from "./WeatherIcon"; 
 import TemperatureChange from "./TemperatureChange"; 
-import ReactAnimatedWeather from "react-animated-weather";
 import "./Content.css";
 
 
@@ -35,63 +34,6 @@ export default function Content(props) {
               <span className="feelsLike">°F</span>
             </li>
           </ul>
-        </div>
-        <h3>Hourly Forecast</h3>
-        <div className="WeatherForecastData row">
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="FOG"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="CLEAR_DAY"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="CLEAR_DAY"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
-          <div className="WeatherForecastData col">
-            <p>11°C</p>
-            <ReactAnimatedWeather
-              icon="RAIN"
-              color="black"
-              size={50}
-              animate={true}
-            />
-          </div>
         </div>
       </div>
     );

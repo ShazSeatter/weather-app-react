@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import axios from "axios";
-import Cities from "./Cities";
+import axios from "axios"; 
 import Content from "./Content";
+import WeatherForecast from "./WeatherForecast";
 
 import "./Header.css";
 
@@ -12,7 +12,7 @@ export default function Header(props) {
   function handleResponse(response) {
     setWeatherData({
       city: response.data.name,
-      icon: response.data.weather[0].icon, 
+      icon: response.data.weather[0].icon,
       temperature: response.data.main.temp,
       humidity: response.data.main.humidity,
       feelsLike: response.data.main.feels_like,
@@ -38,6 +38,7 @@ export default function Header(props) {
     setCity(event.target.value);
   }
 
+
   if (weatherData.ready) {
     return (
       <div className="Header">
@@ -61,8 +62,10 @@ export default function Header(props) {
             </div>
           </form>
         </div>
-        <Cities /> 
+        <div className="content-wrapper">
         <Content data={weatherData} />
+        <WeatherForecast city={weatherData.city}/> 
+        </div>
       </div>
     );
   } else {
