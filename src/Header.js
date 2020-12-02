@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios"; 
 import Content from "./Content";
+import Loader from "react-loader-spinner";
 import WeatherForecast from "./WeatherForecast";
 
 import "./Header.css";
@@ -67,15 +68,21 @@ export default function Header(props) {
           </form>
         </div>
         <div className="content-wrapper">
-        <div className={bgClass}>
-        <Content data={weatherData} />
-        <WeatherForecast city={weatherData.city}/> 
-        </div>
+          <div className={bgClass}>
+            <Content data={weatherData} />
+            <WeatherForecast city={weatherData.city} />
+          </div>
         </div>
       </div>
     );
   } else {
     search();
-    return "Loading...";
+    return (
+    <div> 
+    <h1>Loading...</h1>
+    <Loader type="ThreeDots" color="#00BFFF" height={80} width={80} />
+    </div>
+    ); 
   }
+
 }

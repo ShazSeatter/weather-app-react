@@ -3,6 +3,7 @@
 .Content h1 {
     font-family: 'Julius Sans One', sans-serif;
     font-size: 3.125rem; 
+    padding-top: 1.25rem;
 }
 
 .Content .formatted-date {
