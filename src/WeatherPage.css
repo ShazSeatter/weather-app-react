@@ -3,7 +3,7 @@
   padding-bottom: 1.625rem;
   margin-bottom: 3.1875rem;
   display: block;
-  background-color: #343D82;
+  background-color: transparent; 
 }
 
 .WeatherPage form {
@@ -31,9 +31,9 @@
 }
 
 .WeatherPage form button:hover {
-  background: #343D82; 
+  background: whitesmoke; 
   opacity: 0.8; 
-  color: white;
+  color: grey;
 }
 
 .WeatherPage .location-btn {
@@ -42,9 +42,114 @@
 
 .content-wrapper {
     border-radius: 0.625rem;
-    box-shadow: 0.625rem 0.625rem 0.5rem -0.125rem rgba(142, 141, 142, 0.3);
+    box-shadow: 0.1875rem 0.125rem 0.625rem 0.375rem rgb(229, 230, 232, 0.2); 
     padding: 1.25rem;
     margin: 3.125rem auto;
     max-width: 43.75rem;
-    background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);
+}
+
+.clear {
+  background-image: url(./clear.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.clouds { 
+  background-image: url(./cloudy.jpg);
+  background-size: cover;
+  background-position: bottom;
+}
+.rain {
+  background-image: url(./rain.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.drizzle {
+  background-image: url(./drizzle.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.snow {
+  background-image: url(./snow.jpg);
+  background-size: cover;
+  background-position: bottom;
+  color: rgba(255, 255, 255, 0.863); 
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.thunderstorm {
+  background-image: url(./thunderstorm.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.fog {
+   background-image: url(./fog:mist.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.mist {
+   background-image: url(./fog:mist.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+.smoke {
+   background-image: url(./smoke.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.haze {
+  background-image: url(./haze.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.sandstorm {
+   background-image: url(./smoke.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.dust {
+  background-image: url(./smoke.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.squall {
+  background-image: url(./squall.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.tornado {
+  background-image: url(./tornado.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.ash {
+ background-image: url(./haze.jpg);
+  background-size: cover;
+  background-position: bottom;
+  text-shadow: 2px 2px rgba(142, 141, 142, 0.3); 
+}
+
+.WeatherPage .Footer {
+   padding: 0.625rem; 
+   margin: 1.25rem 1.25rem 0 1.25rem ;
+   font-size: 0.75rem;  
+   padding-bottom: 1.25rem; 
+   color: white; 
 }

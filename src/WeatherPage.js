@@ -46,7 +46,7 @@ export default function WeatherPage(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="WeatherPage">
+      <div className={`${bgClass} WeatherPage`}>
         <div className="top-nav">
           <form className="search-form" onSubmit={handleSubmit}>
             <div className="wrapper">
@@ -68,10 +68,18 @@ export default function WeatherPage(props) {
           </form>
         </div>
         <div className="content-wrapper">
-          <div className={bgClass}>
-            <Content data={weatherData} />
-            <WeatherForecast city={weatherData.city} />
-          </div>
+          <Content data={weatherData} />
+          <WeatherForecast city={weatherData.city} />
+        </div>
+        <div className="Footer">
+          <a
+            href="https://github.com/ShazSeatter/weather-app-react"
+            target="_blank"
+            className="git-hub-respo"
+          >
+            Open source code
+          </a>{" "}
+          by Shaz Seatter
         </div>
       </div>
     );
