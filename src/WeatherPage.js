@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios"; 
+import axios from "axios";
 import Content from "./Content";
 import Loader from "react-loader-spinner";
 import WeatherForecast from "./WeatherForecast";
@@ -9,12 +9,12 @@ import "./WeatherPage.css";
 export default function WeatherPage(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.defaultCity);
-  const [bgClass, setBgClass] = useState("clear"); 
+  const [bgClass, setBgClass] = useState("clear");
 
   function handleResponse(response) {
-    const weather = response.data.weather[0].main.toLowerCase(); 
-    setBgClass(weather); 
-  
+    const weather = response.data.weather[0].main.toLowerCase();
+    setBgClass(weather);
+
     setWeatherData({
       city: response.data.name,
       icon: response.data.weather[0].icon,
@@ -23,7 +23,7 @@ export default function WeatherPage(props) {
       feelsLike: response.data.main.feels_like,
       description: response.data.weather[0].description,
       wind: response.data.wind.speed,
-      date: new Date(response.data.dt * 1000 + (response.data.timezone * 1000)),
+      date: new Date(response.data.dt * 1000 + response.data.timezone * 1000),
       ready: true,
     });
   }
@@ -42,7 +42,6 @@ export default function WeatherPage(props) {
   function handleCityChange(event) {
     setCity(event.target.value);
   }
-
 
   if (weatherData.ready) {
     return (
@@ -86,11 +85,10 @@ export default function WeatherPage(props) {
   } else {
     search();
     return (
-    <div> 
-    <h1>Loading...</h1>
-    <Loader type="ThreeDots" color="#00BFFF" height={80} width={80} />
-    </div>
-    ); 
+      <div>
+        <h1>Loading...</h1>
+        <Loader type="ThreeDots" color="#00BFFF" height={80} width={80} />
+      </div>
+    );
   }
-
 }
