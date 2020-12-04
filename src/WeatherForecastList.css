@@ -1,0 +1,18 @@
+
+@media only screen and (min-width: 20rem) and (max-width: 23.375rem) {
+    .WeatherForecastData .col {
+     margin-top: 0.5625rem;    
+    }
+}
+
+@media only screen and (min-width: 23.4375rem) and (max-width: 25.8125rem) {
+   .WeatherForecastData .col {
+     margin-top: 0.625rem;    
+    }   
+}
+
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+.WeatherForecastData .col {
+    display: block; 
+}
+}
