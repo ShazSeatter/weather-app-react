@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Content from "./Content";
 import Loader from "react-loader-spinner";
-import WeatherForecast from "./WeatherForecast";
+import WeatherForecast from "./WeatherForecast"; 
 
 import "./WeatherPage.css";
 
@@ -71,14 +71,21 @@ export default function WeatherPage(props) {
           <WeatherForecast city={weatherData.city} />
         </div>
         <div className="Footer">
-          <a
-            href="https://github.com/ShazSeatter/weather-app-react"
-            target="_blank"
-            className="git-hub-respo"
-          >
-            Open source code
-          </a>{" "}
-          by Shaz Seatter
+          <div className="footer-wrapper">
+            Hosted by {" "}
+            <a href="/" target="_blank" className="footer-link">
+            Netlify
+            </a>
+            <br />
+            <a
+              href="https://github.com/ShazSeatter/weather-app-react"
+              target="_blank"
+              className="footer-link"
+            >
+              Open source code
+            </a>{" "}
+            by Shaz Seatter
+          </div>
         </div>
       </div>
     );

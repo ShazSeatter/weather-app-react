@@ -8,10 +8,22 @@
 
 .WeatherForecast canvas {
     display: block; 
-    margin: 5px auto; 
-    width: 60px; 
+    margin: 0.3125rem auto; 
+    width: 3.75rem; 
 }
 
 .WeatherForecast .hourly-forecast-title {
     color: white; 
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 23.375rem) {
+    .WeatherForecastData .col {
+     margin-top: 0.5625rem;    
+    }
+}
+
+@media only screen and (min-width: 23.4375rem) and (max-width: 25.8125rem) {
+   .WeatherForecastData .col {
+     margin-top: 0.625rem;    
+    }   
 }

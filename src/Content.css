@@ -1,64 +1,91 @@
-
 .Content h1 {
-    font-family: 'Julius Sans One', sans-serif;
-    color: white; 
-    font-size: 2.5rem; 
-    padding-top: 1.25rem;
+  font-family: "Julius Sans One", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  padding-top: 1.25rem;
 }
 
 .Content .formatted-date {
-    font-size: 1.5625rem; 
-    margin-bottom: 1.875rem; 
-    color: white; 
+  font-size: 1.5625rem;
+  margin-bottom: 1.875rem;
+  color: white;
 }
 
 .Content .text-capitalize {
-    font-size: 1.5625rem; 
-    color: white; 
+  font-size: 1.5625rem;
+  color: white;
 }
 
 .Content ul li {
-    display: inline; 
-    padding: 0.625rem 2.1875rem;
+  display: inline;
+  padding: 0.625rem 2.1875rem;
 }
 
-
 .row {
-    padding: 0.9375rem;
-    margin-top: 0.5rem;
+  padding: 0.9375rem;
+  margin-top: 0.5rem;
 }
 
 .WeatherTemperature .main-temperature {
-    font-size: 4rem;
-    position: relative;
-    bottom: 1.25rem; 
-    padding-left: 1.25rem; 
-    font-weight: bold; 
+  font-size: 4rem;
+  position: relative;
+  bottom: 1.25rem;
+  padding-left: 1.25rem;
+  font-weight: bold;
 }
 
 .WeatherTemperature {
-    padding: 0.75rem; 
-    color: white; 
+  padding: 0.75rem;
+  color: white;
 }
 
 .WeatherTemperature .units {
-    position: relative;
-    bottom: 3rem;
-    left: 0.3125rem; 
-    font-weight: bold;
+  position: relative;
+  bottom: 3rem;
+  left: 0.3125rem;
+  font-weight: bold;
 }
 
 .weather-data .ul-list {
-    list-style: none; 
-    margin-bottom: 3.125rem;
-    text-align: center; 
-    padding: 0.625rem; 
-    font-size: 1.0625rem; 
-    color: white; 
+  list-style: none;
+  margin-bottom: 3.125rem;
+  text-align: center;
+  padding: 0.625rem;
+  font-size: 1.0625rem;
+  color: white;
 }
 
 .weather-data .feelsLike {
-    font-size: 0.8125rem; 
+  font-size: 0.8125rem;
+  position: relative;
+  bottom: 0.125rem;
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 23.375rem) {
+  .WeatherTemperature canvas {
+    width: 5.3125rem; 
+  }
+  .WeatherTemperature .main-temperature {
+      font-size: 4.375rem; 
+      position: relative; 
+      top: -2.125rem; 
+  }
+  .WeatherTemperature .units {
+      position: relative; 
+      top: -3.9375rem; 
+  }
+
+  .Content ul li {
+      display: block; 
+  }
+  .weather-data .ul-list {
     position: relative; 
-    bottom: 0.125rem; 
+    top: -1.4375rem; 
+  }
+}
+
+@media only screen and (min-width: 23.4375rem) and (max-width: 25.8125rem) {
+.Content ul li {
+      display: block; 
+  }
 }

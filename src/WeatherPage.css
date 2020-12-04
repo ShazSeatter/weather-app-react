@@ -46,101 +46,102 @@
 }
 
 .clear {
-  background-image: url(./clear.jpg);
+  background-image: url(./img/clear.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .clouds {
-  background-image: url(./cloudy.jpg);
+  background-image: url(./img/cloudy.jpg);
   background-size: cover;
   background-position: bottom;
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .rain {
-  background-image: url(./rain.jpg);
+  background-image: url(./img/rain.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .drizzle {
-  background-image: url(./drizzle.jpg);
+  background-image: url(./img/drizzle.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .snow {
-  background-image: url(./snow.jpg);
+  background-image: url(./img/snow.jpg);
   background-size: cover;
   background-position: bottom;
   color: rgba(255, 255, 255, 0.863);
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .thunderstorm {
-  background-image: url(./thunderstorm.jpg);
+  background-image: url(./img/thunderstorm.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .fog {
-  background-image: url(./fog:mist.jpg);
+  background-image: url(./img/fog:mist.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .mist {
-  background-image: url(./fog:mist.jpg);
+  background-image: url(./img/fog:mist.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 .smoke {
-  background-image: url(./smoke.jpg);
+  background-image: url(./img/smoke.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .haze {
-  background-image: url(./haze.jpg);
+  background-image: url(./img/haze.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .sandstorm {
-  background-image: url(./smoke.jpg);
+  background-image: url(./img/smoke.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .dust {
-  background-image: url(./smoke.jpg);
+  background-image: url(./img/smoke.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .squall {
-  background-image: url(./squall.jpg);
+  background-image: url(./img/squall.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .tornado {
-  background-image: url(./tornado.jpg);
+  background-image: url(./img/tornado.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .ash {
-  background-image: url(./haze.jpg);
+  background-image: url(./img/haze.jpg);
   background-size: cover;
   background-position: bottom;
-  text-shadow: 2px 2px rgba(142, 141, 142, 0.3);
+  text-shadow: 0.125rem 0.125rem rgba(142, 141, 142, 0.3);
 }
 
 .WeatherPage .Footer {
@@ -149,4 +150,48 @@
   font-size: 0.75rem;
   padding-bottom: 1.25rem;
   color: white;
+}
+
+.WeatherPage .footer-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 12.5rem;
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 0.25rem;
+  color: black;
+}
+
+.footer-wrapper .footer-link {
+  color: darkblue;
+}
+
+@media only screen and (min-width: 20rem) and (max-width: 23.375rem) {
+  .content-wrapper {
+    width: 18.75rem;
+    margin-top: -1.375rem;
+    height: 1000px;
+  }
+  .content-wrapper h1 {
+    font-size: 1.875rem;
+  }
+  .Content .formatted-date,
+  .Content .text-capitalize {
+    font-size: 1.25rem;
+  }
+  .Footer {
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 23.4375rem) and (max-width: 25.8125rem) {
+  .content-wrapper {
+    width: 21.5625rem;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .content-wrapper {
+    width: 400px;
+  }
 }
