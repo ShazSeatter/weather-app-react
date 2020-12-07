@@ -80,6 +80,7 @@ export default function WeatherPage(props) {
             <a
               href="https://github.com/ShazSeatter/weather-app-react"
               target="_blank"
+              rel="noreferrer"
               className="footer-link"
             >
               Open source code
