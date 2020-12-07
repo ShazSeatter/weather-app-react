@@ -16,6 +16,7 @@
 .location-btn {
   text-align: center;
   border: none;
+  border-radius: none; 
   background-color: #ffffff;
   padding: 0.5rem;
   outline-color: lightblue;
