@@ -12,17 +12,12 @@
 }
 
 .WeatherPage .search-input,
-.WeatherPage .submit-btn,
-.location-btn {
+.WeatherPage .submit-btn {
   text-align: center;
-  border: none;
+  border:none; 
   background-color: #ffffff;
   padding: 0.5rem;
   outline-color: lightblue;
-}
-
-.WeatherPage .location-btn {
-  padding-right: 0.59375rem;
 }
 
 .WeatherPage form button {
@@ -186,7 +181,7 @@
 
 @media only screen and (max-width: 280px) {
   .content-wrapper {
-    width: 260px; 
+    width: 260px;
   }
 }
 
