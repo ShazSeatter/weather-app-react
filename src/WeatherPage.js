@@ -60,9 +60,6 @@ export default function WeatherPage(props) {
               <button className="submit-btn" type="submit">
                 <i className="fas fa-search"></i>
               </button>
-              <button className="location-btn" type="submit">
-                <i className="fas fa-map-marker-alt"></i>
-              </button>
             </div>
           </form>
         </div>
