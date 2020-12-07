@@ -14,12 +14,20 @@
 .WeatherPage .search-input,
 .WeatherPage .submit-btn {
   text-align: center;
-  border:none; 
+  border: none;
   background-color: #ffffff;
   padding: 0.5rem;
   outline-color: lightblue;
 }
 
+.WeatherPage .search-input {
+  border: none;
+  border-radius: 4px 0 0 4px;
+}
+.WeatherPage .submit-btn {
+  border: none;
+  border-radius: 0 4px 4px 0;
+}
 .WeatherPage form button {
   color: black;
   background: white;
@@ -162,6 +170,15 @@
 }
 
 @media only screen and (min-width: 20rem) and (max-width: 23.375rem) {
+  .WeatherPage .search-input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  .WeatherPage .submit-btn {
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+
   .content-wrapper {
     width: 18.75rem;
     margin-top: -1.375rem;
@@ -180,18 +197,43 @@
 }
 
 @media only screen and (max-width: 280px) {
+  .WeatherPage .search-input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  .WeatherPage .submit-btn {
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
   .content-wrapper {
     width: 260px;
   }
 }
 
 @media only screen and (min-width: 23.4375rem) and (max-width: 25.8125rem) {
+  .WeatherPage .search-input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  .WeatherPage .submit-btn {
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
   .content-wrapper {
     width: 21.5625rem;
   }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 767px) {
+  .WeatherPage .search-input {
+    border: none;
+    border-radius: 4px 0 0 4px;
+  }
+  .WeatherPage .submit-btn {
+    border: none;
+    border-radius: 0 4px 4px 0;
+  }
+
   .content-wrapper {
     width: 400px;
   }
