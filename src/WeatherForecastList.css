@@ -13,6 +13,7 @@
 
 @media only screen and (min-width: 414px) and (max-width: 767px) {
 .WeatherForecastData .col {
-    display: block; 
+    display: flex; 
+    font-size: 15px; 
 }
 }
