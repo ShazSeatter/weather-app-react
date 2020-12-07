@@ -70,7 +70,7 @@ export default function WeatherPage(props) {
         <div className="Footer">
           <div className="footer-wrapper">
             Hosted by {" "}
-            <a href="/" target="_blank" className="footer-link">
+            <a href="https://stupefied-lalande-8b2997.netlify.app/" target="_blank" className="footer-link">
             Netlify
             </a>
             <br />
