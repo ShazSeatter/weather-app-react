@@ -1,6 +1,6 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
-import "./WeatherForecastList.css"; 
+import "./WeatherForecastList.css";
 
 export default function WeatherForecastList(props) {
   function hours() {
@@ -10,16 +10,16 @@ export default function WeatherForecastList(props) {
   }
 
   function celsius() {
-    let celsius = Math.round(props.data.main.temp); 
+    let celsius = Math.round(props.data.main.temp);
     return `${celsius}°C`;
   }
 
-function fahrenheit() {
-  let fahrenheit = Math.round((props.data.main.temp * 9) / 5 + 32);
-  return `${fahrenheit}°F`; 
-}
+  function fahrenheit() {
+    let fahrenheit = Math.round((props.data.main.temp * 9) / 5 + 32);
+    return `${fahrenheit}°F`;
+  }
 
-return (
+  return (
     <div className="WeatherForecastData col">
       {hours()}
       <br />
@@ -27,4 +27,4 @@ return (
       {celsius()} | {fahrenheit()}
     </div>
   );
-  }
+}

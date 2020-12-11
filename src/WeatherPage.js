@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import Content from "./Content";
 import Loader from "react-loader-spinner";
-import WeatherForecast from "./WeatherForecast"; 
+import WeatherForecast from "./WeatherForecast";
 
 import "./WeatherPage.css";
 
@@ -71,7 +71,7 @@ export default function WeatherPage(props) {
           <div className="footer-wrapper">
             Hosted by {" "}
             <a href="https://stupefied-lalande-8b2997.netlify.app/" target="_blank" rel="noreferrer" className="footer-link">
-            Netlify
+              Netlify
             </a>
             <br />
             <a
