@@ -35,4 +35,15 @@
     display: flex;
     font-size: 15px;
   }
+
+  .forecast-units {
+    font-size: 23px;
+  }
+
+  .forecast-unit {
+    position: relative;
+    top: -1px;
+    left: 1px;
+    font-size: 23px;
+  }
 }
