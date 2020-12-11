@@ -1,19 +1,38 @@
+.forecast-units {
+  font-size: 18px;
+}
+
+.forecast-unit {
+  position: relative;
+  top: 7px;
+  font-size: 35px;
+}
 
 @media only screen and (min-width: 320px) and (max-width: 374px) {
-    .WeatherForecastData .col {
-     margin-top: 0.5625rem;    
-    }
+  .WeatherForecastData .col {
+    margin-top: 0.5625rem;
+  }
+
+  .forecast-units {
+    font-size: 15px;
+  }
+
+  .forecast-unit {
+    position: relative;
+    top: 3px;
+    font-size: 23px;
+  }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 413px) {
-   .WeatherForecastData .col {
-     margin-top: 0.625rem;    
-    }   
+  .WeatherForecastData .col {
+    margin-top: 0.625rem;
+  }
 }
 
 @media only screen and (min-width: 414px) and (max-width: 767px) {
-.WeatherForecastData .col {
-    display: flex; 
-    font-size: 15px; 
-}
+  .WeatherForecastData .col {
+    display: flex;
+    font-size: 15px;
+  }
 }
